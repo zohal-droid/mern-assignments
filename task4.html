@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Student registration form" />
+    <title>Registration Form</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+    /* Task 5.4: CSS Variables */
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #2563eb;
+    --background-color: #eff6ff;
+    --card-color: #ffffff;
+    --text-color: #1f2937;
+    --spacing: 20px;
+    --border-radius: 10px;
+}
+    body {
+    
+        background-color: var(--background-color);
+        font-family: Arial, sans-serif;
+        color: var(--text-color);
+        margin: var(--spacing);
+    }
+
+    h1 {
+        color: var(--primary-color);
+        text-align: center;
+    }
+     
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+.card {
+    background-color: var(--card-color);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing);
+}
+
+
+#hero {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: var(--spacing);
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #174a7e;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #174a7e;
+}
+
+
+        </style>
+  </head>
+  <body>
+
+    <h1 id="hero">Student Registration</h1>
+     <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="register.html">Register</a> |
+        <a href="contact.html">Contact</a>
+        </nav>
+       <br> <br>
+    <form action="#" method="post" class="card">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <br><BR>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <br>
+
+      <br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" />
+
+      <br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <br><br>
+
+      <p>Gender:</p>
+
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <br /><br />
+
+      <p>Hobbies:</p>
+
+      <input type="checkbox" id="coding" name="hobbies" value="coding" />
+      <label for="coding">Coding</label>
+
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+      <label for="reading">Reading</label>
+
+      <br /><br />
+
+      <label for="course">Choose Course:</label>
+
+      <select id="course" name="course">
+        <option value="">Select a course</option>
+        <option value="cse">Computer Science</option>
+        <option value="it">Information Technology</option>
+        <option value="ece">Electronics</option>
+      </select>
+
+      <br /><br />
+
+      <label for="message">Your Message:</label>
+      <br />
+      <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+      <br /><br />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>Upcoming Events</h2>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Date</th>
+          <th>Venue</th>
+          <th>Entry Fee</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Web Development Workshop</td>
+          <td>10 November 2026</td>
+          <td>Computer Lab</td>
+          <td>Free</td>
+        </tr>
+
+        <tr>
+          <td>Coding Competition</td>
+          <td>15 November 2026</td>
+          <td>Auditorium</td>
+          <td>₹100</td>
+        </tr>
+
+        <tr>
+          <td>Tech Fest</td>
+          <td>20 November 2026</td>
+          <td>College Campus</td>
+          <td>Free</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Events</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  <section>
+     <h2>Why I Chose These Colours</h2>
+     <p>I chose light blue for a clean and peaceful background.</p>
+     <p>Dark blue makes headings clear and professional.</p>
+     <p>White cards improve readability and contrast.</p>
+   </section>
+    
+  </body>
+</html>

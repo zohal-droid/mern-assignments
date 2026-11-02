@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 - CSS Grid</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+        
+.dashboard {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-rows: 70px 1fr 60px;
+
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+
+    min-height: 100vh;
+    gap: 10px;
+}
+      
+.head {
+    grid-area: head;
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.side {
+    grid-area: side;
+    background-color: #334155;
+    color: white;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #e2e8f0;
+    padding: 20px;
+}
+
+.foot {
+    grid-area: foot;
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+        /* Task 8.1: CSS Grid */
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #2563eb;
+            color: white;
+            padding: 30px;
+            gap: 15px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        .icon {
+            font-size: 30px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class ="head">
+            My Dashboard
+        </header>
+        <aside class="side">
+            <h3>MENU</h3>
+            <p>HOME</p>
+            <P>PROFILE</P>
+            <p>SETTINGS</p>
+            <P>LOGOUT</P>
+        </aside>
+            <main class="main">
+                <h2>Dashboard Content</h2>
+               
+    <div class="grid-container">
+
+        <div class="box">
+        <span class="icon">👨‍🎓</span>
+        <span>Students</span>
+        </div>
+        <div class="box">
+        <span class="icon">📚</span>
+        <span>Courses</span>
+        </div>
+        <div class="box">
+        <span class="icon">📊</span>
+        <span>Reports</span>
+        </div>
+        <div class="box">
+        <span class="icon">📁</span>
+        <span>Projects</span>
+        </div>
+        <div class="box">
+        <span class="icon">🏆</span>
+        <span>Achievements</span>
+        </div>
+        <div class="box">
+        <span class="icon">💬</span>
+        <span>Activities</span>
+        </div>
+
+    </div>
+    </main>
+    <footer class="foot">
+        &copy; 2026 My Dashboard</footer>
+   </div>
+</body>
+</html>
